@@ -281,7 +281,7 @@
 
         <!-- Main Categories Grid -->
         <section class="pt-20 px-6 max-w-7xl mx-auto">
-            <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+            <div class="flex flex-col lg:flex-row gap-8 items-start">
                 <!-- Field Crops -->
                 <div class="lg:w-7/12">
                     <div class="flex items-center gap-4 mb-10">
@@ -304,7 +304,7 @@
                             <span class="font-black text-gray-700">Grains & Cereals</span>
                         </div>
                         <div class="commodity-card">
-                            <div class="icon-circle bg-blue-50 text-blue-700"><i class="ti ti-apple"></i></div>
+                            <div class="icon-circle bg-pei-blue/10 text-pei-blue"><i class="ti ti-apple"></i></div>
                             <span class="font-black text-gray-700">Fruits & Berries</span>
                         </div>
                         <div class="commodity-card">
@@ -316,7 +316,7 @@
                             <span class="font-black text-gray-700">Root Vegetables</span>
                         </div>
                         <div class="commodity-card">
-                            <div class="icon-circle bg-indigo-50 text-indigo-700"><i class="ti ti-droplet"></i></div>
+                            <div class="icon-circle bg-pei-blue/10 text-pei-blue"><i class="ti ti-droplet"></i></div>
                             <span class="font-black text-gray-700">Pulses & Oilseeds</span>
                         </div>
                         <div class="commodity-card col-span-full">
@@ -327,14 +327,18 @@
                 </div>
 
                 <!-- Livestock -->
-                <div class="lg:w-5/12 bg-white rounded-[2.5rem] shadow-2xl p-8 md:p-12 border border-gray-100 relative overflow-hidden h-full">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-pei-red/5 rounded-bl-full"></div>
+                <div class="lg:w-5/12">
                     <div class="flex items-center gap-4 mb-10">
+                        <div class="w-12 h-12 bg-pei-red text-white rounded-2xl flex items-center justify-center text-xl shadow-lg shadow-pei-red/20">
+                            <i class="ti ti-pig"></i>
+                        </div>
                         <div>
                             <h3 class="text-2xl font-black text-gray-900">Livestock</h3>
                             <p class="text-sm text-gray-400 font-bold uppercase tracking-wider">Flow-Based Advances</p>
                         </div>
                     </div>
+                    <div class="bg-white rounded-[2.5rem] shadow-2xl p-8 md:p-12 border border-gray-100 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-pei-red/5 rounded-bl-full"></div>
                     <div class="space-y-8">
                         <div class="relative pl-8 border-l-2 border-gray-100">
                             <div class="absolute -left-[13px] top-0 w-6 h-6 rounded-full bg-pei-red flex items-center justify-center text-white" style="font-size:0.65rem"><i class="ti ti-cow"></i></div>
@@ -348,6 +352,7 @@
                             <p class="text-sm text-gray-500 mb-4 leading-relaxed">For hogs, lambs, and beef heavies. Settled at the end of the advance year.</p>
                             <span class="inline-block px-3 py-1 bg-gray-100 rounded-md text-[10px] font-black uppercase text-gray-500 tracking-widest">Hogs • Lambs • Heavies</span>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
