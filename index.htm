@@ -111,31 +111,6 @@
             font-size: 1.25rem;
         }
 
-        /* Timeline Styles */
-        .timeline-container {
-            position: relative;
-            padding-left: 2.5rem;
-        }
-        .timeline-container::before {
-            content: '';
-            position: absolute;
-            left: 0.75rem;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #e5e7eb;
-        }
-        .timeline-dot {
-            position: absolute;
-            left: 0;
-            width: 1.5rem;
-            height: 1.5rem;
-            background: var(--pei-red);
-            border-radius: 50%;
-            border: 4px solid white;
-            z-index: 10;
-        }
-
         #mobileMenu {
             transition: transform 0.3s ease-in-out;
             transform: translateX(100%);
@@ -143,16 +118,30 @@
         #mobileMenu.open {
             transform: translateX(0);
         }
+
+        /* Improved Process Flow Styles */
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--pei-red);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 10px rgba(139, 62, 47, 0.2);
+        }
     </style>
 </head>
 <body class="antialiased topo-pattern">
 
     <nav class="bg-white/95 backdrop-blur-sm border-b border-gray-200 py-4 px-6 md:px-12 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-4 md:space-x-6">
+            <div class="flex items-center space-x-6">
                 <a href="#" onclick="showPage('home')" class="flex items-center space-x-4 group">
                     <img src="peifa-logo.png" alt="PEIFA" class="h-10 md:h-12 transition-opacity group-hover:opacity-80">
-                    <img src="AAFC-logo.png" alt="Agriculture and Agri-Food Canada" class="h-7 md:h-8 w-auto object-contain">
                     <div class="h-8 w-px bg-gray-200 hidden sm:block"></div>
                     <div class="hidden md:flex program-title-container">
                         <span class="program-title-main">Advance Payment Program</span>
@@ -176,10 +165,7 @@
 
     <div id="mobileMenu" class="fixed inset-0 z-[60] bg-white lg:hidden flex flex-col p-8">
         <div class="flex justify-between items-center mb-12">
-            <div class="flex gap-4 items-center">
-                <img src="peifa-logo.png" alt="PEIFA" class="h-8">
-                <img src="AAFC-logo.png" alt="AAFC" class="h-7">
-            </div>
+            <img src="peifa-logo.png" alt="PEIFA" class="h-8">
             <button class="text-3xl text-gray-400" onclick="toggleMobileMenu()">
                 <i class="ti ti-x"></i>
             </button>
@@ -193,8 +179,10 @@
     </div>
 
     <div id="home" class="page-content active">
-        <header class="hero-section text-white py-32 md:py-56 px-6 text-center">
+        <header class="hero-section text-white py-32 md:py-48 px-6 text-center">
             <div class="max-w-4xl mx-auto">
+                <img src="AAFC-logo.png" alt="Agriculture and Agri-Food Canada" class="h-8 w-auto mx-auto mb-6 opacity-90 drop-shadow-md">
+                
                 <div class="inline-block bg-pei-green/90 text-white px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase mb-6">Federal Support Program</div>
                 <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight drop-shadow-lg">Financial Support for <br>Island Farmers</h1>
                 <p class="text-xl md:text-2xl mb-12 opacity-95 max-w-2xl mx-auto leading-relaxed font-medium">
@@ -233,86 +221,59 @@
             </div>
         </section>
 
-        <section class="bg-white py-24 px-6">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-black mb-4">Program Roadmap & Key Deadlines</h2>
-                    <p class="text-gray-500 max-w-2xl mx-auto">Ensuring you stay compliant and funded throughout the production cycle.</p>
+        <section class="bg-white py-24 px-6 border-y border-gray-100">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl font-black mb-4">Program Lifecycle & Deadlines</h2>
+                    <p class="text-gray-500 max-w-xl mx-auto">A clear guide to managing your advance throughout the year.</p>
                 </div>
 
-                <div class="grid lg:grid-cols-2 gap-16">
-                    <div class="timeline-container">
-                        <div class="timeline-dot"></div>
-                        <div class="mb-12">
-                            <span class="text-pei-red font-black text-xs uppercase tracking-widest block mb-2">Program Opening</span>
-                            <h4 class="text-2xl font-black mb-4">Early April 1st</h4>
-                            <ul class="space-y-3 text-gray-600 font-medium">
-                                <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-green mt-1"></i> Submit completed APP application</li>
-                                <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-green mt-1"></i> Sign Repayment Agreement</li>
-                                <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-green mt-1"></i> Provide production estimates & required documentation</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="timeline-dot" style="top: 190px;"></div>
-                        <div class="mb-12">
-                            <span class="text-pei-blue font-black text-xs uppercase tracking-widest block mb-2">Seeding Report Window</span>
-                            <h4 class="text-2xl font-black mb-4">May – July</h4>
-                            <ul class="space-y-3 text-gray-600 font-medium">
-                                <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-blue mt-1"></i> Submit Final Seeded Acreage Report (FSAR), if required</li>
-                                <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-blue mt-1"></i> Ensure planted acres align with initial application</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-dot" style="top: 360px;"></div>
-                        <div>
-                            <span class="text-pei-green font-black text-xs uppercase tracking-widest block mb-2">Ongoing Requirement</span>
-                            <h4 class="text-2xl font-black mb-4">Within 30 Days of Each Sale</h4>
-                            <ul class="space-y-3 text-gray-600 font-medium">
-                                <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-green mt-1"></i> Repay corresponding portion of advance</li>
-                                <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-green mt-1"></i> Submit Proof of Sale (Buyer, Date, Commodity, Quantity, Amount)</li>
-                            </ul>
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <div class="relative">
+                        <div class="step-number">1</div>
+                        <h4 class="text-2xl font-black mb-2 text-pei-red">Application Phase</h4>
+                        <p class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">April 1st Opening</p>
+                        <div class="space-y-4">
+                            <div class="bg-pei-sand p-6 rounded-2xl border border-gray-100">
+                                <p class="text-sm text-gray-600 font-medium leading-relaxed">Submit your application with signed repayment agreements and production estimates.</p>
+                            </div>
+                            <div class="bg-pei-sand p-6 rounded-2xl border border-gray-100">
+                                <p class="text-xs font-bold text-pei-blue uppercase mb-2">Seeding Report Window</p>
+                                <p class="text-sm text-gray-600 font-medium">May – July: Confirm planted acres via FSAR report.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="space-y-12">
-                        <div class="bg-pei-sand p-8 rounded-3xl border border-gray-100">
-                            <div class="flex items-center gap-4 mb-6">
-                                <div class="w-12 h-12 bg-white text-pei-red rounded-2xl flex items-center justify-center text-xl shadow-sm"><i class="ti ti-calendar-event"></i></div>
-                                <div>
-                                    <h4 class="font-black text-xl">December 31</h4>
-                                    <p class="text-xs font-bold text-gray-400 uppercase tracking-tighter">Annual Reporting Deadline</p>
-                                </div>
+                    <div class="relative">
+                        <div class="step-number">2</div>
+                        <h4 class="text-2xl font-black mb-2 text-pei-red">Sales & Repayment</h4>
+                        <p class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Ongoing / Within 30 Days</p>
+                        <div class="space-y-4">
+                            <div class="bg-pei-blue-dark text-white p-6 rounded-2xl shadow-xl">
+                                <p class="text-sm font-bold mb-4">Repay as you sell:</p>
+                                <ul class="text-xs space-y-2 opacity-80 font-medium">
+                                    <li>• Submit proof of sale documentation</li>
+                                    <li>• Pay back the portion of the advance</li>
+                                    <li>• Must be done within 30 days of sale</li>
+                                </ul>
                             </div>
-                            <ul class="space-y-2 text-sm text-gray-600 font-medium">
-                                <li>• Submit storage report for any unsold commodities</li>
-                                <li>• Confirm inventory in storage (e.g., potatoes, grain)</li>
-                            </ul>
                         </div>
+                    </div>
 
-                        <div class="bg-pei-blue-dark text-white p-8 rounded-3xl">
-                            <div class="flex items-center gap-4 mb-6">
-                                <div class="w-12 h-12 bg-white/10 text-white rounded-2xl flex items-center justify-center text-xl"><i class="ti ti-file-certificate"></i></div>
-                                <div>
-                                    <h4 class="font-black text-xl">January 31</h4>
-                                    <p class="text-xs font-bold text-white/40 uppercase tracking-tighter">Documentation Enforcement</p>
-                                </div>
+                    <div class="relative">
+                        <div class="step-number">3</div>
+                        <h4 class="text-2xl font-black mb-2 text-pei-red">Final Settlement</h4>
+                        <p class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">End of Production Year</p>
+                        <div class="space-y-4">
+                            <div class="bg-pei-sand p-6 rounded-2xl border border-gray-100">
+                                <p class="text-xs font-bold text-gray-800 uppercase mb-2">Dec 31 / Jan 31</p>
+                                <p class="text-sm text-gray-600 font-medium">Annual storage reporting and final documentation enforcement.</p>
                             </div>
-                            <p class="text-sm font-bold text-pei-green leading-relaxed">Mandatory: All repayments must include Proof of Sale documentation. No exceptions after this date.</p>
-                        </div>
-
-                        <div class="bg-pei-red text-white p-8 rounded-3xl shadow-xl shadow-pei-red/10">
-                            <div class="flex items-center gap-4 mb-6">
-                                <div class="w-12 h-12 bg-white/20 text-white rounded-2xl flex items-center justify-center text-xl"><i class="ti ti-alert-triangle"></i></div>
-                                <div>
-                                    <h4 class="font-black text-xl">September 30</h4>
-                                    <p class="text-xs font-bold text-white/50 uppercase tracking-tighter">Final Repayment Deadline</p>
-                                </div>
+                            <div class="bg-pei-red text-white p-6 rounded-2xl shadow-lg">
+                                <p class="text-xs font-bold uppercase mb-2 opacity-60">September 30</p>
+                                <p class="text-sm font-black">Final Repayment Deadline.</p>
+                                <p class="text-[11px] mt-2 opacity-70">All outstanding balances must be cleared by this date.</p>
                             </div>
-                            <ul class="space-y-2 text-sm font-medium">
-                                <li>• Repay entire outstanding advance balance</li>
-                                <li>• Submit all remaining Proof of Sale documentation</li>
-                                <li class="pt-4 border-t border-white/10 text-xs italic opacity-70">Note: If your Production Period ends earlier, full repayment is required by that date.</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -344,11 +305,11 @@
                     <h3 class="text-2xl font-black mb-8 text-pei-red">Livestock</h3>
                     <div class="space-y-6">
                         <div class="p-6 bg-pei-sand rounded-2xl">
-                            <h4 class="font-bold text-lg mb-2">Standard Flow</h4>
+                            <h4 class="font-bold text-lg mb-2 text-gray-900">Standard Flow</h4>
                             <p class="text-sm text-gray-600">For cow/calf beef cattle operations. Repayments over up to 24 months.</p>
                         </div>
                         <div class="p-6 bg-pei-sand rounded-2xl">
-                            <h4 class="font-bold text-lg mb-2">Continuous Flow</h4>
+                            <h4 class="font-bold text-lg mb-2 text-gray-900">Continuous Flow</h4>
                             <p class="text-sm text-gray-600">For hogs, lambs, and beef heavies. Settled at the end of the advance year.</p>
                         </div>
                     </div>
@@ -424,13 +385,17 @@
     </div>
 
     <footer class="bg-white py-20 px-6 border-t border-gray-200">
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto text-center">
             <div class="flex flex-wrap justify-center items-center gap-8 mb-12">
                 <img src="peifa-logo.png" alt="PEIFA Logo" class="h-12">
                 <img src="AAFC-logo.png" alt="AAFC Logo" class="h-10 w-auto object-contain">
             </div>
-            <div class="text-center text-xs text-gray-500 max-w-4xl mx-auto">
-                <p>© 2026 PEI Federation of Agriculture • Charlottetown, PE</p>
+            <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-4">Administrative & Cooperation Notice</p>
+            <p class="text-xs text-gray-500 max-w-4xl mx-auto leading-relaxed mb-10">
+                The Advance Payments Program is a federal loan guarantee program administered by the Prince Edward Island Federation of Agriculture in cooperation with Agriculture and Agri-Food Canada under the Agricultural Marketing Programs Act (AMPA). 
+            </p>
+            <div class="pt-8 border-t border-gray-100 text-[10px] font-black text-gray-300 uppercase tracking-[0.3em]">
+                © 2026 PEI Federation of Agriculture • Charlottetown, PE
             </div>
         </div>
     </footer>
