@@ -76,31 +76,9 @@
         }
         
         .logo-peifa { height: 50px; width: auto; }
-        .logo-aafc { height: 50px; width: auto; } /* Fixed to match PEIFA size perfectly */
+        .logo-aafc { height: 50px; width: auto; }
         
         .footer-logo-img { object-fit: contain; }
-
-        .program-title-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .program-title-main {
-            color: var(--pei-red);
-            font-weight: 800;
-            font-size: 0.95rem;
-            line-height: 1;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-        }
-        .program-title-sub {
-            font-size: 0.7rem;
-            font-weight: 600;
-            color: #94a3b8;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-top: 2px;
-        }
 
         .stat-card {
             background: white;
@@ -198,21 +176,24 @@
     </div>
 
     <div id="home" class="page-content active">
-        <header class="hero-section text-white py-32 md:py-56 px-6 text-center">
-            <div class="max-w-4xl mx-auto">
-                <div class="inline-flex items-center justify-center bg-white px-6 py-3 rounded-xl mb-8 shadow-xl border border-gray-100">
-                    <div class="flex flex-col program-title-container">
-                        <span class="program-title-main">Advance Payment Program</span>
-                        <span class="program-title-sub">Prince Edward Island</span>
-                    </div>
+        <header class="hero-section text-white min-h-[85vh] flex flex-col items-center justify-center px-6 text-center">
+            <div class="max-w-5xl mx-auto flex flex-col items-center">
+                
+                <div class="mb-10">
+                    <h1 class="text-6xl md:text-8xl font-black leading-tight drop-shadow-xl uppercase tracking-tight">
+                        Advance Payment Program
+                        <span class="block text-3xl md:text-5xl font-bold mt-2 text-gray-200 tracking-widest">Prince Edward Island</span>
+                    </h1>
                 </div>
-                <br>
+                
                 <div class="inline-block bg-pei-green/90 text-white px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase mb-6">Federal Support Program</div>
                 
-                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight drop-shadow-lg">Financial Support for <br>Island Farmers</h1>
+                <h2 class="text-5xl md:text-7xl font-black mb-8 leading-tight drop-shadow-lg">Financial Support for <br>Island Farmers</h2>
+                
                 <p class="text-xl md:text-2xl mb-12 opacity-95 max-w-2xl mx-auto leading-relaxed font-medium">
                     Access up to $1,000,000 in low-cost operating capital through the Advance Payments Program.
                 </p>
+                
                 <div class="flex flex-col sm:flex-row justify-center gap-6">
                     <button onclick="showPage('commodities')" class="bg-white text-gray-900 px-10 py-4 rounded-xl font-bold hover:shadow-2xl transition-all border-b-4 border-gray-200">Explore the Program</button>
                     <button onclick="showPage('contact')" class="bg-pei-red text-white px-10 py-4 rounded-xl font-bold hover:shadow-2xl transition-all border-b-4 border-red-900">Get in Touch</button>
