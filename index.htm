@@ -24,7 +24,6 @@
             scroll-behavior: smooth;
         }
         
-        /* Layout Utilities */
         .bg-pei-red { background-color: var(--pei-red); }
         .text-pei-red { color: var(--pei-red); }
         .bg-pei-green { background-color: var(--pei-green); }
@@ -33,7 +32,6 @@
         .text-pei-blue { color: var(--pei-blue); }
         .bg-pei-blue-dark { background-color: var(--pei-blue-dark); }
         
-        /* Design Elements */
         .topo-pattern {
             background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 86c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm76-26c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zM3.1 53.8c.276 0 .5-.224.5-.5s-.224-.5-.5-.5-.5.224-.5.5.224.5.5.5zm58.2 2.2c.276 0 .5-.224.5-.5s-.224-.5-.5-.5-.5.224-.5.5.224.5.5.5zM46.2 8.2c.276 0 .5-.224.5-.5s-.224-.5-.5-.5-.5.224-.5.5.224.5.5.5zm29.2 27.3c.276 0 .5-.224.5-.5s-.224-.5-.5-.5-.5.224-.5.5.224.5.5.5zm-1.4 47.7c.276 0 .5-.224.5-.5s-.224-.5-.5-.5-.5.224-.5.5.224.5.5.5zm5.3-54.7c.276 0 .5-.224.5-.5s-.224-.5-.5-.5-.5.224-.5.5.224.5.5.5zM3.4 26.6c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm43.3 16.3c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm4.4 11.9c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm40.6-14.3c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm-16 41.4c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm-17.8 42.7c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm-31.7-40c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm35.9-82.8c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zM22 82.2c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm57.7 7.2c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm-59.1-3.3c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm50.6-70.7c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zM10.5 59c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zm57.5 11.3c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zM34.5 4.4c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25zM40.5 2.2c.138 0 .25-.112.25-.25s-.112-.25-.25-.25-.25.112-.25.25.112.25.25.25' fill='%238B3E2F' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
         }
@@ -44,7 +42,6 @@
             background-position: center;
         }
 
-        /* Nav Enhancements */
         .nav-link {
             position: relative;
             font-weight: 600;
@@ -61,7 +58,6 @@
         .nav-link:hover::after { width: 100%; }
         .nav-link:hover { color: var(--pei-red); }
         
-        /* Animation & Transition */
         .page-content { display: none; }
         .page-content.active { display: block; animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
 
@@ -70,110 +66,62 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Component Refinements */
-        .card-lift {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-lift:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-
-        .footer-logo-box {
-            background: white;
-            padding: 16px 32px;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #f1f3f5;
-            min-height: 100px;
-        }
+        .card-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
 
         .commodity-card {
             background: white;
-            border-radius: 1.25rem;
-            padding: 1.25rem;
+            border-radius: 1rem;
+            padding: 1.15rem;
             display: flex;
             align-items: center;
             gap: 1rem;
             border: 1px solid #f1f5f9;
             transition: all 0.2s ease;
         }
-        .commodity-card:hover {
-            border-color: var(--pei-green);
-            background-color: #f8fafc;
-        }
+        .commodity-card:hover { border-color: var(--pei-green); background-color: #f8fafc; }
 
-        .icon-circle {
-            width: 3.25rem;
-            height: 3.25rem;
-            border-radius: 0.85rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
+        .btn-primary {
+            @apply bg-pei-red text-white px-8 py-3.5 rounded-xl font-bold transition-all shadow-lg;
+            border-bottom: 3px solid #6b2f24;
         }
+        .btn-primary:hover { @apply brightness-110; transform: translateY(-1px); }
+        
+        .btn-secondary {
+            @apply bg-white text-gray-900 px-8 py-3.5 rounded-xl font-bold transition-all shadow-lg;
+            border-bottom: 3px solid #e2e8f0;
+        }
+        .btn-secondary:hover { transform: translateY(-1px); }
 
-        #mobileMenu {
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-            transform: translateX(100%);
-        }
-        #mobileMenu.open {
-            transform: translateX(0);
-        }
+        #mobileMenu { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); transform: translateX(100%); }
+        #mobileMenu.open { transform: translateX(0); }
 
         .step-number {
-            width: 44px;
-            height: 44px;
-            background: var(--pei-red);
-            color: white;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 12px rgba(139, 62, 47, 0.25);
-        }
-
-        /* Custom Button */
-        .btn-primary {
-            @apply bg-pei-red text-white px-10 py-4 rounded-xl font-bold transition-all shadow-lg;
-            border-bottom: 4px solid #6b2f24;
-        }
-        .btn-primary:hover {
-            @apply shadow-xl brightness-110;
-            transform: translateY(-2px);
-        }
-        .btn-secondary {
-            @apply bg-white text-gray-900 px-10 py-4 rounded-xl font-bold transition-all shadow-lg;
-            border-bottom: 4px solid #e2e8f0;
-        }
-        .btn-secondary:hover {
-            @apply shadow-xl;
-            transform: translateY(-2px);
+            width: 40px; height: 40px;
+            background: var(--pei-red); color: white;
+            border-radius: 10px; display: flex; align-items: center; justify-content: center;
+            font-weight: 800; margin-bottom: 1.25rem;
+            box-shadow: 0 4px 12px rgba(139, 62, 47, 0.2);
         }
     </style>
 </head>
 <body class="antialiased topo-pattern">
 
-    <nav class="bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 px-6 md:px-12 sticky top-0 z-50">
+    <nav class="bg-white/95 backdrop-blur-md border-b border-gray-100 py-3.5 px-6 md:px-12 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-6">
                 <a href="#" onclick="showPage('home')" class="flex items-center space-x-4 group">
-                    <img src="peifa-logo.png" alt="PEIFA" class="h-10 md:h-12 transition-opacity group-hover:opacity-80">
-                    <div class="h-8 w-px bg-gray-200 hidden sm:block"></div>
-                    <img src="AAFC-logo.png" alt="Agriculture and Agri-Food Canada" class="h-8 md:h-10 w-auto object-contain transition-opacity group-hover:opacity-80">
+                    <img src="peifa-logo.png" alt="PEIFA" class="h-9 md:h-11 transition-opacity group-hover:opacity-80">
+                    <div class="h-6 w-px bg-gray-200 hidden sm:block"></div>
+                    <img src="AAFC-logo.png" alt="Agriculture and Agri-Food Canada" class="h-7 md:h-9 w-auto object-contain transition-opacity group-hover:opacity-80">
                 </a>
             </div>
             
-            <div class="hidden lg:flex items-center space-x-10">
-                <a href="#" onclick="showPage('home')" class="nav-link">Home</a>
-                <a href="#" onclick="showPage('commodities')" class="nav-link">Commodities</a>
-                <a href="#" onclick="showPage('eligibility')" class="nav-link">Eligibility & Fees</a>
-                <a href="#" onclick="showPage('contact')" class="bg-pei-red text-white px-6 py-2.5 rounded-lg font-bold hover:bg-opacity-90 transition-all shadow-md active:scale-95">Connect with Team</a>
+            <div class="hidden lg:flex items-center space-x-9">
+                <a href="#" onclick="showPage('home')" class="nav-link text-sm uppercase tracking-wide">Home</a>
+                <a href="#" onclick="showPage('commodities')" class="nav-link text-sm uppercase tracking-wide">Commodities</a>
+                <a href="#" onclick="showPage('eligibility')" class="nav-link text-sm uppercase tracking-wide">Eligibility</a>
+                <a href="#" onclick="showPage('contact')" class="bg-pei-red text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-md active:scale-95 transition-all">Connect with Team</a>
             </div>
 
             <button class="lg:hidden text-2xl text-pei-red p-2" onclick="toggleMobileMenu()">
@@ -190,133 +138,111 @@
             </button>
         </div>
         <div class="flex flex-col space-y-8 text-2xl font-bold">
-            <a href="#" onclick="handleMobileNav('home')" class="text-gray-800 hover:text-pei-red transition-colors">Home</a>
-            <a href="#" onclick="handleMobileNav('commodities')" class="text-gray-800 hover:text-pei-red transition-colors">Commodities</a>
-            <a href="#" onclick="handleMobileNav('eligibility')" class="text-gray-800 hover:text-pei-red transition-colors">Eligibility & Fees</a>
-            <a href="#" onclick="handleMobileNav('contact')" class="bg-pei-red text-white text-center py-5 rounded-2xl shadow-xl active:scale-95 transition-transform">Connect with Team</a>
-        </div>
-        <div class="mt-auto pt-10 border-t border-gray-100 flex items-center gap-6">
-            <p class="text-[10px] text-gray-400 uppercase tracking-widest font-black leading-tight">In Cooperation<br>With</p>
-            <img src="AAFC-logo.png" alt="AAFC" class="h-10 opacity-70">
+            <a href="#" onclick="handleMobileNav('home')" class="text-gray-800">Home</a>
+            <a href="#" onclick="handleMobileNav('commodities')" class="text-gray-800">Commodities</a>
+            <a href="#" onclick="handleMobileNav('eligibility')" class="text-gray-800">Eligibility & Fees</a>
+            <a href="#" onclick="handleMobileNav('contact')" class="bg-pei-red text-white text-center py-5 rounded-2xl shadow-xl">Connect with Team</a>
         </div>
     </div>
 
     <div id="home" class="page-content active">
-        <header class="hero-section text-white min-h-[85vh] flex flex-col items-center justify-center px-6 text-center">
-            <div class="max-w-5xl mx-auto flex flex-col items-center">
+        <header class="hero-section text-white min-h-[75vh] flex flex-col items-center justify-center px-6 text-center">
+            <div class="max-w-4xl mx-auto flex flex-col items-center">
                 
-                <div class="mb-10">
-                    <h1 class="text-5xl md:text-8xl font-black leading-none drop-shadow-2xl uppercase tracking-tighter mb-2">
+                <div class="mb-6">
+                    <h1 class="text-4xl md:text-6xl font-black leading-tight drop-shadow-2xl uppercase tracking-tighter mb-1">
                         Advance Payment Program
                     </h1>
-                    <span class="block text-lg md:text-2xl font-bold text-gray-300 tracking-[0.5em] uppercase opacity-90">Prince Edward Island</span>
+                    <span class="block text-base md:text-lg font-bold text-gray-300 tracking-[0.4em] uppercase opacity-90">Prince Edward Island</span>
                 </div>
                 
-                <div class="flex items-center gap-6 mb-12 w-full justify-center">
-                    <div class="h-px bg-white/20 flex-grow max-w-[80px] hidden sm:block"></div>
-                    <div class="bg-pei-green/90 text-white px-4 py-1 rounded-md text-[10px] md:text-xs font-black tracking-widest uppercase border border-white/10 shadow-lg">Federal Support Program</div>
-                    <div class="h-px bg-white/20 flex-grow max-w-[80px] hidden sm:block"></div>
+                <div class="flex items-center gap-4 mb-8 w-full justify-center">
+                    <div class="h-px bg-white/20 flex-grow max-w-[60px] hidden sm:block"></div>
+                    <div class="bg-pei-green/90 text-white px-3 py-1 rounded text-[9px] md:text-[10px] font-black tracking-widest uppercase border border-white/10 shadow-lg">Federal Support Program</div>
+                    <div class="h-px bg-white/20 flex-grow max-w-[60px] hidden sm:block"></div>
                 </div>
                 
-                <h2 class="text-3xl md:text-5xl font-bold mb-10 leading-tight drop-shadow-xl text-white/95">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8 leading-tight drop-shadow-xl text-white/95">
                     Financial Support for Island Farmers
                 </h2>
                 
-                <p class="text-lg md:text-xl mb-12 text-white/80 max-w-2xl mx-auto leading-relaxed font-medium">
+                <p class="text-base md:text-lg mb-10 text-white/80 max-w-xl mx-auto leading-relaxed font-medium">
                     Access up to $1,000,000 in low-cost operating capital through the Advance Payments Program.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <button onclick="showPage('commodities')" class="btn-secondary">Explore Program</button>
                     <button onclick="showPage('contact')" class="btn-primary">Get in Touch</button>
                 </div>
             </div>
         </header>
 
-        <section class="py-24 px-6 max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="bg-white p-10 rounded-2xl border border-gray-100 text-center card-lift shadow-sm">
-                    <div class="w-14 h-14 bg-pei-green/10 text-pei-green rounded-xl flex items-center justify-center mx-auto mb-8 text-2xl shadow-inner">
+        <section class="py-20 px-6 max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 text-center card-lift shadow-sm">
+                    <div class="w-12 h-12 bg-pei-green/10 text-pei-green rounded-xl flex items-center justify-center mx-auto mb-6 text-xl shadow-inner">
                         <i class="ti ti-percentage"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Interest-Free</h3>
-                    <p class="text-gray-500 leading-relaxed mb-6">The first $250,000 of your advance is interest-free, funded by the federal government.</p>
-                    <div class="mt-auto pt-4 border-t border-gray-50">
-                        <p class="text-[10px] text-gray-400 uppercase font-black tracking-widest leading-tight">Thresholds are set annually</p>
-                    </div>
+                    <h3 class="text-lg font-bold mb-3">Interest-Free</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">The first $250,000 of your advance is interest-free, funded by the federal government.</p>
                 </div>
-                <div class="bg-white p-10 rounded-2xl border border-gray-100 text-center card-lift shadow-sm">
-                    <div class="w-14 h-14 bg-pei-blue/10 text-pei-blue rounded-xl flex items-center justify-center mx-auto mb-8 text-2xl shadow-inner">
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 text-center card-lift shadow-sm">
+                    <div class="w-12 h-12 bg-pei-blue/10 text-pei-blue rounded-xl flex items-center justify-center mx-auto mb-6 text-xl shadow-inner">
                         <i class="ti ti-pig-money"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Interest-Advantaged</h3>
-                    <p class="text-gray-500 leading-relaxed">Amounts above $250,000 are provided at Prime - 0.75%, negotiated for PEI producers.</p>
+                    <h3 class="text-lg font-bold mb-3">Interest-Advantaged</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Amounts above $250,000 are provided at Prime - 0.75% for PEI producers.</p>
                 </div>
-                <div class="bg-white p-10 rounded-2xl border border-gray-100 text-center card-lift shadow-sm">
-                    <div class="w-14 h-14 bg-pei-red/10 text-pei-red rounded-xl flex items-center justify-center mx-auto mb-8 text-2xl shadow-inner">
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 text-center card-lift shadow-sm">
+                    <div class="w-12 h-12 bg-pei-red/10 text-pei-red rounded-xl flex items-center justify-center mx-auto mb-6 text-xl shadow-inner">
                         <i class="ti ti-users"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Local Guidance</h3>
-                    <p class="text-gray-500 leading-relaxed">PEIFA handles the paperwork, inspections, and liaison with creditors for you.</p>
+                    <h3 class="text-lg font-bold mb-3">Local Guidance</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">PEIFA handles the paperwork, inspections, and liaison with creditors for you.</p>
                 </div>
             </div>
         </section>
 
-        <section class="bg-white py-24 px-6 border-y border-gray-100">
+        <section class="bg-white py-20 px-6 border-y border-gray-100">
             <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-20">
-                    <div class="inline-block px-3 py-1 bg-pei-red/5 text-pei-red text-[10px] font-black tracking-[0.3em] uppercase rounded mb-4">The Process</div>
-                    <h2 class="text-4xl font-black mb-4">Program Lifecycle & Deadlines</h2>
-                    <p class="text-gray-500 max-w-xl mx-auto">A roadmap for managing your capital throughout the production year.</p>
+                <div class="text-center mb-16">
+                    <div class="inline-block px-3 py-1 bg-pei-red/5 text-pei-red text-[10px] font-black tracking-[0.2em] uppercase rounded mb-3">Workflow</div>
+                    <h2 class="text-3xl font-black mb-3">Program Lifecycle & Deadlines</h2>
+                    <p class="text-sm text-gray-500 max-w-xl mx-auto">A roadmap for managing your capital throughout the production year.</p>
                 </div>
 
-                <div class="grid lg:grid-cols-3 gap-16">
+                <div class="grid lg:grid-cols-3 gap-12">
                     <div class="relative">
                         <div class="step-number">1</div>
-                        <h4 class="text-2xl font-black mb-2">Application Phase</h4>
-                        <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-8">Beginning April 1st</p>
-                        <div class="space-y-4">
-                            <div class="bg-pei-sand/50 p-6 rounded-2xl border border-gray-100">
-                                <p class="text-sm text-gray-600 font-medium leading-relaxed">Submit your application with signed repayment agreements and production estimates.</p>
-                            </div>
-                            <div class="bg-white p-6 rounded-2xl border-2 border-pei-blue/5 shadow-sm">
-                                <p class="text-[10px] font-black text-pei-blue uppercase mb-3 tracking-widest">Seeding Reports</p>
-                                <p class="text-sm text-gray-600 font-medium">May – July: Confirm planted acres via FSAR report.</p>
-                            </div>
+                        <h4 class="text-xl font-black mb-1">Application Phase</h4>
+                        <p class="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-6">Beginning April 1st</p>
+                        <div class="bg-pei-sand/50 p-5 rounded-xl border border-gray-100 mb-4">
+                            <p class="text-sm text-gray-600 leading-relaxed">Submit application with repayment agreements and production estimates.</p>
                         </div>
                     </div>
 
                     <div class="relative">
                         <div class="step-number">2</div>
-                        <h4 class="text-2xl font-black mb-2">Sales & Repayment</h4>
-                        <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-8">Ongoing / 30-Day Limit</p>
-                        <div class="space-y-4">
-                            <div class="bg-pei-blue-dark text-white p-8 rounded-3xl shadow-xl relative overflow-hidden">
-                                <div class="absolute inset-0 topo-pattern opacity-5"></div>
-                                <p class="text-sm font-bold mb-6 relative z-10">Repay as you sell:</p>
-                                <ul class="text-xs space-y-4 relative z-10 opacity-90 font-medium">
-                                    <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-green"></i> Submit proof of sale documentation</li>
-                                    <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-green"></i> Pay back the portion of the advance</li>
-                                    <li class="flex items-start gap-3"><i class="ti ti-circle-check text-pei-green"></i> Finalize within 30 days of sale</li>
-                                </ul>
-                            </div>
+                        <h4 class="text-xl font-black mb-1">Sales & Repayment</h4>
+                        <p class="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-6">Ongoing / 30-Day Limit</p>
+                        <div class="bg-pei-blue-dark text-white p-6 rounded-2xl shadow-xl relative overflow-hidden">
+                            <div class="absolute inset-0 topo-pattern opacity-5"></div>
+                            <ul class="text-xs space-y-3 relative z-10 opacity-90 font-medium">
+                                <li class="flex items-start gap-2"><i class="ti ti-circle-check text-pei-green"></i> Submit proof of sale</li>
+                                <li class="flex items-start gap-2"><i class="ti ti-circle-check text-pei-green"></i> Pay back the portion</li>
+                                <li class="flex items-start gap-2"><i class="ti ti-circle-check text-pei-green"></i> Finalize within 30 days</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="relative">
                         <div class="step-number">3</div>
-                        <h4 class="text-2xl font-black mb-2">Final Settlement</h4>
-                        <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-8">Production Year End</p>
-                        <div class="space-y-4">
-                            <div class="bg-pei-sand/50 p-6 rounded-2xl border border-gray-100">
-                                <p class="text-[10px] font-black text-gray-800 uppercase mb-3 tracking-widest">Storage Reports</p>
-                                <p class="text-sm text-gray-600 font-medium">Dec 31 / Jan 31: Annual storage reporting and final documentation enforcement.</p>
-                            </div>
-                            <div class="bg-pei-red text-white p-7 rounded-3xl shadow-xl">
-                                <p class="text-[10px] font-black uppercase mb-2 opacity-70 tracking-widest">Deadline</p>
-                                <p class="text-xl font-black">September 30</p>
-                                <p class="text-[11px] mt-2 opacity-80 leading-relaxed font-medium">All outstanding balances must be cleared to maintain eligibility.</p>
-                            </div>
+                        <h4 class="text-xl font-black mb-1">Final Settlement</h4>
+                        <p class="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-6">Production Year End</p>
+                        <div class="bg-pei-red text-white p-6 rounded-2xl shadow-xl">
+                            <p class="text-[9px] font-black uppercase mb-1 opacity-70 tracking-widest">Deadline</p>
+                            <p class="text-lg font-black">September 30</p>
+                            <p class="text-[10px] mt-2 opacity-80 leading-relaxed">Outstanding balances must be cleared to maintain eligibility.</p>
                         </div>
                     </div>
                 </div>
@@ -325,299 +251,135 @@
     </div>
 
     <div id="commodities" class="page-content">
-        <section class="relative overflow-hidden h-[400px] md:h-[500px]">
-            <img src="IMG_0608-2.jpg" alt="Potato harvest in Prince Edward Island" class="absolute inset-0 w-full h-full object-cover">
-            <div class="absolute inset-0" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7))"></div>
+        <section class="relative h-[350px] overflow-hidden">
+            <img src="IMG_0608-2.jpg" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/50"></div>
             <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-                <span class="text-white/70 font-black tracking-[0.3em] uppercase text-[10px] mb-4 block px-4 py-1.5 border border-white/20 backdrop-blur-md rounded-full">Product Coverage</span>
-                <h2 class="text-4xl md:text-6xl font-black text-white mb-6 drop-shadow-2xl">Everything We Fund</h2>
-                <p class="text-lg text-white/90 max-w-2xl mx-auto font-medium leading-relaxed opacity-80">The Advance Payments Program supports a wide range of PEI production categories.</p>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-4">Everything We Fund</h2>
+                <p class="text-sm md:text-base text-white/80 max-w-xl font-medium">The Advance Payments Program supports a wide range of production.</p>
             </div>
         </section>
 
-        <section class="py-24 px-6 max-w-7xl mx-auto">
-            <div class="flex flex-col lg:flex-row gap-16 items-start">
+        <section class="py-20 px-6 max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-12 items-start">
                 <div class="lg:w-7/12">
-                    <div class="flex items-center gap-5 mb-12">
-                        <div class="w-14 h-14 bg-pei-green text-white rounded-2xl flex items-center justify-center text-2xl shadow-xl shadow-pei-green/20">
-                            <i class="ti ti-seeding"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-black text-gray-900">Field & Row Crops</h3>
-                            <p class="text-[10px] text-gray-400 font-black uppercase tracking-widest mt-1">Storable & Fresh Production</p>
-                        </div>
-                    </div>
-                    
-                    <div class="grid sm:grid-cols-2 gap-4">
-                        <div class="commodity-card">
-                            <div class="icon-circle bg-red-50 text-red-700 shadow-sm"><i class="ti ti-plant-2"></i></div>
-                            <span class="font-bold text-gray-700">Potatoes</span>
-                        </div>
-                        <div class="commodity-card">
-                            <div class="icon-circle bg-yellow-50 text-yellow-700 shadow-sm"><i class="ti ti-wheat"></i></div>
-                            <span class="font-bold text-gray-700">Grains & Cereals</span>
-                        </div>
-                        <div class="commodity-card">
-                            <div class="icon-circle bg-blue-50 text-blue-700 shadow-sm"><i class="ti ti-apple"></i></div>
-                            <span class="font-bold text-gray-700">Fruits & Berries</span>
-                        </div>
-                        <div class="commodity-card">
-                            <div class="icon-circle bg-green-50 text-green-700 shadow-sm"><i class="ti ti-trees"></i></div>
-                            <span class="font-bold text-gray-700">Turf Grass</span>
-                        </div>
-                        <div class="commodity-card">
-                            <div class="icon-circle bg-orange-50 text-orange-700 shadow-sm"><i class="ti ti-carrot"></i></div>
-                            <span class="font-bold text-gray-700">Root Vegetables</span>
-                        </div>
-                        <div class="commodity-card">
-                            <div class="icon-circle bg-indigo-50 text-indigo-700 shadow-sm"><i class="ti ti-droplet"></i></div>
-                            <span class="font-bold text-gray-700">Pulses & Oilseeds</span>
-                        </div>
-                        <div class="commodity-card col-span-full">
-                            <div class="icon-circle bg-teal-50 text-teal-700 shadow-sm"><i class="ti ti-salad"></i></div>
-                            <span class="font-bold text-gray-700">Specialty & Storable Vegetables</span>
-                        </div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-8 flex items-center gap-3">
+                        <span class="w-10 h-10 bg-pei-green text-white rounded-lg flex items-center justify-center text-lg"><i class="ti ti-seeding"></i></span>
+                        Field & Row Crops
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <div class="commodity-card"><div class="w-8 h-8 bg-red-50 text-red-700 rounded-md flex items-center justify-center"><i class="ti ti-plant-2"></i></div> <span class="text-sm font-bold">Potatoes</span></div>
+                        <div class="commodity-card"><div class="w-8 h-8 bg-yellow-50 text-yellow-700 rounded-md flex items-center justify-center"><i class="ti ti-wheat"></i></div> <span class="text-sm font-bold">Grains & Cereals</span></div>
+                        <div class="commodity-card"><div class="w-8 h-8 bg-blue-50 text-blue-700 rounded-md flex items-center justify-center"><i class="ti ti-apple"></i></div> <span class="text-sm font-bold">Fruits & Berries</span></div>
+                        <div class="commodity-card"><div class="w-8 h-8 bg-green-50 text-green-700 rounded-md flex items-center justify-center"><i class="ti ti-trees"></i></div> <span class="text-sm font-bold">Turf Grass</span></div>
                     </div>
                 </div>
 
-                <div class="lg:w-5/12 bg-white rounded-[2.5rem] shadow-xl p-10 md:p-14 border border-gray-100 relative overflow-hidden self-stretch">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-pei-red/5 rounded-bl-full"></div>
-                    <div class="flex items-center gap-5 mb-12">
-                        <div class="w-12 h-12 bg-pei-red text-white rounded-2xl flex items-center justify-center text-xl shadow-lg shadow-pei-red/20">
-                            <i class="ti ti-building-warehouse"></i>
+                <div class="lg:w-5/12 bg-white rounded-2xl shadow-xl p-8 border border-gray-100 self-stretch">
+                    <h3 class="text-xl font-black mb-6">Livestock</h3>
+                    <div class="space-y-6">
+                        <div class="relative pl-8 border-l-2 border-gray-100">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-pei-red"></div>
+                            <h4 class="font-bold text-gray-900 text-sm mb-1">Standard Flow</h4>
+                            <p class="text-xs text-gray-500">For cow/calf beef cattle operations. terms up to 24 months.</p>
                         </div>
-                        <h3 class="text-2xl font-black text-gray-900">Livestock</h3>
-                    </div>
-                    <div class="space-y-10">
-                        <div class="relative pl-10 border-l-2 border-gray-100">
-                            <div class="absolute -left-[13px] top-0 w-6 h-6 rounded-lg bg-pei-red flex items-center justify-center text-white text-[10px] shadow-md"><i class="ti ti-cow"></i></div>
-                            <h4 class="font-bold text-gray-900 text-lg mb-2">Standard Flow</h4>
-                            <p class="text-sm text-gray-500 mb-5 leading-relaxed">For cow/calf beef cattle operations. Repayment terms extended up to 24 months.</p>
-                            <span class="inline-block px-3 py-1 bg-gray-100 rounded text-[10px] font-black uppercase text-gray-500 tracking-widest">Beef Cattle</span>
-                        </div>
-                        <div class="relative pl-10 border-l-2 border-gray-100">
-                            <div class="absolute -left-[13px] top-0 w-6 h-6 rounded-lg bg-pei-blue flex items-center justify-center text-white text-[10px] shadow-md"><i class="ti ti-circle-filled"></i></div>
-                            <h4 class="font-bold text-gray-900 text-lg mb-2">Continuous Flow</h4>
-                            <p class="text-sm text-gray-500 mb-5 leading-relaxed">Settled at the end of the advance year for hogs, lambs, and beef heavies.</p>
-                            <span class="inline-block px-3 py-1 bg-gray-100 rounded text-[10px] font-black uppercase text-gray-500 tracking-widest">Hogs • Lambs • Heavies</span>
+                        <div class="relative pl-8 border-l-2 border-gray-100">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-pei-blue"></div>
+                            <h4 class="font-bold text-gray-900 text-sm mb-1">Continuous Flow</h4>
+                            <p class="text-xs text-gray-500">For hogs, lambs, and beef heavies.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-16 px-6 max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="rounded-3xl overflow-hidden shadow-2xl aspect-[16/9] md:aspect-auto">
-                    <img src="potatoharvest.jpg" alt="Potato harvest on PEI" class="w-full h-full object-cover brightness-90">
-                </div>
-                <div class="p-10 md:p-14 bg-pei-blue text-white rounded-[3rem] shadow-2xl relative overflow-hidden">
-                    <div class="absolute inset-0 topo-pattern opacity-10"></div>
-                    <div class="relative z-10">
-                        <div class="flex items-center gap-5 mb-8">
-                            <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center text-2xl shadow-inner">
-                                <i class="ti ti-shield-lock"></i>
-                            </div>
-                            <h4 class="text-3xl font-black">Security & BRM</h4>
-                        </div>
-                        <p class="text-lg opacity-80 leading-relaxed mb-10 font-medium">
-                            Advances must be secured through federal Business Risk Management (BRM) programs to ensure financial stability. 
-                        </p>
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div class="bg-white/10 p-6 rounded-2xl border border-white/10 backdrop-blur-sm">
-                                <span class="block font-black text-pei-green uppercase text-[10px] tracking-widest mb-3">Crop Security</span>
-                                <p class="text-sm font-bold">AgriInsurance Coverage</p>
-                            </div>
-                            <div class="bg-white/10 p-6 rounded-2xl border border-white/10 backdrop-blur-sm">
-                                <span class="block font-black text-pei-green uppercase text-[10px] tracking-widest mb-3">Livestock Security</span>
-                                <p class="text-sm font-bold">AgriStability Enrollment</p>
-                            </div>
-                        </div>
-                        <div class="mt-12 flex items-center gap-4 p-4 bg-black/20 rounded-xl">
-                            <i class="ti ti-info-circle text-pei-green text-xl"></i>
-                            <p class="text-[11px] text-white/70 italic font-medium leading-tight">
-                                Contact our office to verify your specific security requirements before beginning your application.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pb-24 px-6 max-w-7xl mx-auto">
-            <div class="bg-pei-blue-dark rounded-[3rem] p-16 text-center text-white relative overflow-hidden shadow-2xl">
-                <div class="absolute inset-0 topo-pattern opacity-10"></div>
-                <div class="relative z-10">
-                    <h3 class="text-3xl font-black mb-6">Need Coverage for a Niche Commodity?</h3>
-                    <p class="opacity-70 mb-12 max-w-2xl mx-auto leading-relaxed text-lg">We cover dozens of specialty crops and island-specific products. Reach out to our team to confirm your eligibility.</p>
-                    <button onclick="showPage('contact')" class="bg-pei-green text-white px-12 py-5 rounded-2xl font-bold hover:scale-105 transition-all shadow-xl active:scale-95">Contact a Program Officer</button>
                 </div>
             </div>
         </section>
     </div>
 
     <div id="eligibility" class="page-content">
-        <section class="py-24 px-6 max-w-5xl mx-auto">
-            <div class="text-center mb-20">
-                <div class="inline-block px-3 py-1 bg-pei-red/5 text-pei-red text-[10px] font-black tracking-[0.3em] uppercase rounded mb-4">Financials</div>
-                <h2 class="text-4xl font-black mb-4">Application & Costs</h2>
-                <div class="w-20 h-1.5 bg-pei-red mx-auto rounded-full"></div>
+        <section class="py-20 px-6 max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black mb-2">Application & Costs</h2>
+                <div class="w-16 h-1 bg-pei-red mx-auto"></div>
             </div>
             
-            <div class="bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100 mb-20">
-                <div class="p-10 md:p-16">
-                    <h3 class="text-sm font-black mb-12 uppercase tracking-[0.2em] text-pei-red border-l-4 border-pei-red pl-5">Eligibility Checklist</h3>
-                    <ul class="grid md:grid-cols-2 gap-12">
-                        <li class="flex gap-5">
-                            <div class="shrink-0 w-10 h-10 bg-pei-green/10 text-pei-green rounded-xl flex items-center justify-center shadow-inner">
-                                <i class="ti ti-check text-xl"></i>
-                            </div>
-                            <div>
-                                <p class="font-bold text-gray-900 mb-1">BRM Security</p>
-                                <p class="text-sm text-gray-500 leading-relaxed">Advances must be fully secured by AgriInsurance or AgriStability coverage.</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-5">
-                            <div class="shrink-0 w-10 h-10 bg-pei-green/10 text-pei-green rounded-xl flex items-center justify-center shadow-inner">
-                                <i class="ti ti-check text-xl"></i>
-                            </div>
-                            <div>
-                                <p class="font-bold text-gray-900 mb-1">Entity Structure</p>
-                                <p class="text-sm text-gray-500 leading-relaxed">Sole proprietors, partnerships, and corporations based on PEI are eligible.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bg-pei-blue-dark text-white p-10 md:p-16 relative overflow-hidden">
-                    <div class="absolute inset-0 topo-pattern opacity-5"></div>
-                    <div class="relative z-10">
-                        <h3 class="text-sm font-black mb-12 uppercase tracking-[0.2em] text-pei-green border-l-4 border-pei-green pl-5">Admin Fee Schedule</h3>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-left">
-                                <thead>
-                                    <tr class="text-white/40 font-black text-[10px] uppercase tracking-widest border-b border-white/10">
-                                        <th class="pb-6">Advance Range</th>
-                                        <th class="pb-6">Member Rate</th>
-                                        <th class="pb-6">Non-Member</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="divide-y divide-white/5 font-medium">
-                                    <tr>
-                                        <td class="py-7 text-white/90">Up to $50,000</td>
-                                        <td class="py-7 font-black text-pei-green text-lg">$550</td>
-                                        <td class="py-7 text-white/60">$700</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-7 text-white/90">$250,000 – $400,000</td>
-                                        <td class="py-7 font-black text-pei-green text-lg">$1,250</td>
-                                        <td class="py-7 text-white/60">$1,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-7 text-white/90">$400,000 – $1,000,000</td>
-                                        <td class="py-7 font-black text-pei-green text-lg">$1,750</td>
-                                        <td class="py-7 text-white/60">$2,250</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="p-8 md:p-12">
+                    <h3 class="text-xs font-black mb-8 uppercase tracking-widest text-pei-red">Eligibility</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="flex gap-4">
+                            <i class="ti ti-check text-pei-green text-xl"></i>
+                            <p class="text-sm font-bold">Advances must be fully secured by AgriInsurance or AgriStability coverage.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <i class="ti ti-check text-pei-green text-xl"></i>
+                            <p class="text-sm font-bold">Open to sole proprietors, partnerships, and corporations based on PEI.</p>
                         </div>
                     </div>
+                </div>
+                <div class="bg-pei-blue-dark text-white p-8 md:p-12">
+                    <table class="w-full text-left text-xs">
+                        <thead>
+                            <tr class="text-white/40 border-b border-white/10 uppercase tracking-widest"><th class="pb-4">Range</th><th class="pb-4">Member</th><th class="pb-4">Non-Member</th></tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5">
+                            <tr><td class="py-5">Up to $50k</td><td class="py-5 text-pei-green font-black">$550</td><td class="py-5 text-white/50">$700</td></tr>
+                            <tr><td class="py-5">$250k - $400k</td><td class="py-5 text-pei-green font-black">$1,250</td><td class="py-5 text-white/50">$1,500</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
     </div>
 
     <div id="contact" class="page-content">
-        <section class="py-24 px-6 md:px-12 bg-pei-red text-white relative overflow-hidden">
-            <div class="absolute inset-0 topo-pattern opacity-10"></div>
-            <div class="max-w-7xl mx-auto text-center mb-20 relative z-10">
-                <h2 class="text-5xl md:text-6xl font-black mb-8">Let's Get Started</h2>
-                <p class="text-xl opacity-80 max-w-3xl mx-auto leading-relaxed font-medium">Our Program Officers are here to help you navigate the application and secure your operating capital.</p>
+        <section class="py-20 px-6 bg-pei-red text-white">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl font-black mb-4">Let's Get Started</h2>
+                <p class="text-base opacity-80">Our Program Officers are ready to help you navigate the process.</p>
             </div>
-
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 relative z-10">
-                <div class="bg-white text-gray-900 p-12 rounded-[2.5rem] shadow-2xl border-t-8 border-pei-green hover:scale-[1.02] transition-transform">
-                    <h3 class="text-2xl font-black mb-1">Andrew Wood</h3>
-                    <p class="text-pei-red font-black text-[10px] mb-10 tracking-[0.2em] uppercase opacity-60">Program Officer</p>
-                    <div class="space-y-6">
-                        <a href="mailto:andrew@peifa.ca" class="flex items-center gap-4 font-bold text-pei-blue hover:text-pei-red transition-colors group">
-                            <div class="w-10 h-10 bg-pei-blue/5 rounded-lg flex items-center justify-center group-hover:bg-pei-red/5"><i class="ti ti-mail"></i></div>
-                            awood@peifa.ca
-                        </a>
-                        <div class="flex items-center gap-4 text-gray-500 font-medium">
-                            <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center"><i class="ti ti-phone"></i></div>
-                            902-368-7289
-                        </div>
-                    </div>
+            <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="bg-white text-gray-900 p-10 rounded-2xl shadow-2xl border-t-4 border-pei-green">
+                    <h3 class="text-xl font-black">Andrew Wood</h3>
+                    <p class="text-[10px] text-pei-red font-black uppercase mb-6 tracking-widest">Program Officer</p>
+                    <a href="mailto:andrew@peifa.ca" class="text-sm font-bold text-pei-blue hover:underline">awood@peifa.ca</a>
                 </div>
-
-                <div class="bg-white text-gray-900 p-12 rounded-[2.5rem] shadow-2xl border-t-8 border-pei-green hover:scale-[1.02] transition-transform">
-                    <h3 class="text-2xl font-black mb-1">Paul King</h3>
-                    <p class="text-pei-red font-black text-[10px] mb-10 tracking-[0.2em] uppercase opacity-60">Program Officer</p>
-                    <div class="space-y-6">
-                        <a href="mailto:paul@peifa.ca" class="flex items-center gap-4 font-bold text-pei-blue hover:text-pei-red transition-colors group">
-                            <div class="w-10 h-10 bg-pei-blue/5 rounded-lg flex items-center justify-center group-hover:bg-pei-red/5"><i class="ti ti-mail"></i></div>
-                            paulking@peifa.ca
-                        </a>
-                        <div class="flex items-center gap-4 text-gray-500 font-medium">
-                            <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center"><i class="ti ti-phone"></i></div>
-                            902-368-7289
-                        </div>
-                    </div>
+                <div class="bg-white text-gray-900 p-10 rounded-2xl shadow-2xl border-t-4 border-pei-green">
+                    <h3 class="text-xl font-black">Paul King</h3>
+                    <p class="text-[10px] text-pei-red font-black uppercase mb-6 tracking-widest">Program Officer</p>
+                    <a href="mailto:paul@peifa.ca" class="text-sm font-bold text-pei-blue hover:underline">paulking@peifa.ca</a>
                 </div>
             </div>
         </section>
     </div>
 
-    <footer class="bg-white py-24 px-6 border-t border-gray-100">
+    <footer class="bg-white py-16 px-6 border-t border-gray-100 text-center">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-wrap justify-center items-center gap-12 mb-16">
-                <div class="footer-logo-box">
-                    <img src="peifa-logo.png" alt="PEIFA Logo" class="h-14 w-auto object-contain">
-                </div>
-                <div class="footer-logo-box">
-                    <img src="AAFC-logo.png" alt="AAFC Logo" class="h-14 w-auto object-contain">
-                </div>
+            <div class="flex flex-wrap justify-center items-center gap-8 mb-10">
+                <img src="peifa-logo.png" alt="PEIFA" class="h-10">
+                <img src="AAFC-logo.png" alt="AAFC" class="h-8">
             </div>
-            <div class="text-center">
-                <p class="text-[10px] text-gray-400 max-w-3xl mx-auto leading-relaxed uppercase font-black tracking-[0.3em] mb-6">
-                    Administrative & Cooperation Notice
-                </p>
-                <p class="text-xs text-gray-500/70 max-w-4xl mx-auto leading-relaxed font-medium">
-                    The Advance Payments Program is a federal loan guarantee program administered by the Prince Edward Island Federation of Agriculture in cooperation with Agriculture and Agri-Food Canada under the Agricultural Marketing Programs Act (AMPA). 
-                </p>
-                <div class="mt-16 pt-10 border-t border-gray-50 text-[10px] font-black text-gray-300 uppercase tracking-[0.4em]">
-                    © 2026 PEI Federation of Agriculture • Charlottetown, PE
-                </div>
+            <p class="text-[9px] text-gray-400 uppercase tracking-[0.2em] mb-4">Administrative & Cooperation Notice</p>
+            <p class="text-[10px] text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                The APP is a federal loan guarantee program administered by the PEI Federation of Agriculture in cooperation with AAFC under the AMPA.
+            </p>
+            <div class="mt-12 text-[9px] font-black text-gray-300 uppercase tracking-[0.3em]">
+                © 2026 PEI Federation of Agriculture
             </div>
         </div>
     </footer>
 
     <script>
         function showPage(pageId) {
-            document.querySelectorAll('.page-content').forEach(p => {
-                p.classList.remove('active');
-            });
-            const targetPage = document.getElementById(pageId);
-            if (targetPage) {
-                targetPage.classList.add('active');
-            }
+            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+            const target = document.getElementById(pageId);
+            if (target) target.classList.add('active');
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
-
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('open');
-            // Prevent scrolling when menu is open
             document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : 'auto';
         }
-
-        function handleMobileNav(pageId) {
-            toggleMobileMenu();
-            setTimeout(() => showPage(pageId), 300);
-        }
-
-        // Initialize Home
+        function handleMobileNav(pageId) { toggleMobileMenu(); setTimeout(() => showPage(pageId), 300); }
         showPage('home');
     </script>
 </body>
